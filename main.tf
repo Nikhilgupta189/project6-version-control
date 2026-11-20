@@ -11,6 +11,7 @@ resource "terraform_data" "infrastructure" {
   input = {
     project     = "devops-training"
     environment = var.environment
+    managed_by  = "terraform"
   }
 }
 
